@@ -21,4 +21,9 @@ pipeline {
         }
     }
 }
+post {
+  success {
+    archiveArtifacts artifacts: '*.txt', fingerprint: true
+  }
+}
 
