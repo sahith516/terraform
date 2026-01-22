@@ -14,10 +14,6 @@ module "m3" {
 module "m4" {
  source ="github.com/sahith516/terraform.git//first"
 }
-module "vnet_example_all_default" {
-  source  = "Azure/vnet/azurerm//examples/all_default"
-  version = "5.0.1"
-}
 variable "m1f1" {
   default = "m1f1"
 }
